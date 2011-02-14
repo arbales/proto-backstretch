@@ -35,7 +35,7 @@ speed, consider loading your scripts with async/defer. Placing the javascript at
 <pre><code><script type="text/javascript">   
   document.observe("dom:loaded", function(){
     new Backstretch("http://path/to/image.png");
-  })
+  });
 </script>
 </code></pre>  
 
