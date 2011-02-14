@@ -4,8 +4,9 @@ Backstretch is javascript class that allows you to add a dynamically-resized bac
 It depends on Prototype with Scripty2 (earlier versions of Scriptaculous may also work).
 The image will stretch to fit the page, and will automatically resize as the window size changes.
 
-h2. Demo
+h2. Examples
 
+See the examples/ folder.
 
 h2. Options
 
