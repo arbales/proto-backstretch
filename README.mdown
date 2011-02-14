@@ -1,0 +1,60 @@
+# Proto Backstretch
+
+Backstretch is javascript class that allows you to add a dynamically-resized background image to any page.
+It depends on Prototype with Scripty2 (earlier versions of Scriptaculous may also work).
+The image will stretch to fit the page, automatically resize as the window size changes, and crossfade between images.
+
+## Examples
+
+See the examples/ folder.
+
+## Options
+
+### centeredX
+
+The ratio of the width/height of the image doesn't always jive with the width/height of the window. This parameter controls whether or not we center the image on the X axis to account for the discrepancy. (type=Boolean, default=true)
+
+### centeredY
+
+This parameter controls whether or not we center the image on the Y axis to account for the aforementioned discrepancy. (type=Boolean, default=true)
+
+### speed
+
+This is the speed at which the image will fade in, after downloading is complete, in seconds. 1.0 is the default.
+
+
+## Setup
+
+Include the Prototype / Scripty2 libraries and Backstretch files in your webpage (preferably at the top of the page, in the head). If you're particularly concerned about speed, consider loading your scripts with async/defer. Placing the javascript at the bottom of the page is also supported:
+  
+    <script type="text/javascript" src="/path/to/prototype.s2.min.js"></script>
+    <script type="text/javascript" src="/path/to/proto.backstretch.min.js"></script>
+
+
+    <script type="text/javascript">   
+      new Backstretch("http://path/to/image.png");
+    </script>
+
+Or, if you choose to place scripts in the head:
+
+    <script type="text/javascript">   
+      document.observe("dom:loaded", function(){
+        new Backstretch("http://path/to/image.png");
+      });
+    </script>
+
+## Swapping Images
+
+proto-backstretch expands upon the jQuery version by adding a method to swap images and resizes.
+
+    bg.change_source("http://path/to/another/image.png"); // Will load, and then crossfade image.
+
+## Changelog
+
+### Version 1.0
+
+Initial release.
+
+## Support
+
+Please file a ticket on our Github issues tracker.
