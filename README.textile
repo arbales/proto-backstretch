@@ -24,8 +24,7 @@ This is the speed at which the image will fade in, after downloading is complete
 
 h2. Setup
 
-Include the Prototype / Scripty2 libraries and Backstretch files in your webpage (preferably at the top of the page, in the head). If you're particularly concerned about
-speed, consider loading your scripts with async/defer. Placing the javascript at the bottom of the page is also supported:
+Include the Prototype / Scripty2 libraries and Backstretch files in your webpage (preferably at the top of the page, in the head). If you're particularly concerned about speed, consider loading your scripts with async/defer. Placing the javascript at the bottom of the page is also supported:
   
 <pre><code><script type="text/javascript" src="/path/to/prototype.s2.min.js"></script>
 <script type="text/javascript" src="/path/to/proto.backstretch.min.js"></script>
