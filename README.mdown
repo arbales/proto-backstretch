@@ -2,7 +2,9 @@
 
 Backstretch is javascript class that allows you to add a dynamically-resized background image to any page.
 It depends on Prototype with Scripty2 (earlier versions of Scriptaculous may also work).
-The image will stretch to fit the page, automatically resize as the window size changes, and crossfade between images.
+The image will stretch to fit the page, automatically resize as the window size changes, and crossfade between images.     
+
+proto-backstretch is a port of [srobbin/jquery-backstretch](https://github.com/srobbin/jquery-backstretch).
 
 ## Examples
 
