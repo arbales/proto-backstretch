@@ -33,6 +33,10 @@ class Backstretch
       document.body.insert({top: @container})
       @img.src = @src  
 
+    Event.observe(window, 'resize', =>
+      @adjust()
+    )
+
     this # for chaining
 
   create_image: ->

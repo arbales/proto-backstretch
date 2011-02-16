@@ -28,6 +28,9 @@ Backstretch = (function() {
       });
       this.img.src = this.src;
     }
+    Event.observe(window, 'resize', __bind(function() {
+      return this.adjust();
+    }, this));
     this;
   }
   Backstretch.prototype.create_image = function() {
