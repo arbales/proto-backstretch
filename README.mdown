@@ -34,15 +34,17 @@ Include the Prototype / Scripty2 libraries and Backstretch files in your webpage
 
 
     <script type="text/javascript">   
-      new Backstretch("http://path/to/image.png");
+      bg = new Backstretch("http://path/to/image.png");
+      window.onresize = function(){if (bg !== undefined){bg.adjust();}}                                         
     </script>
 
 Or, if you choose to place scripts in the head:
 
     <script type="text/javascript">   
       document.observe("dom:loaded", function(){
-        new Backstretch("http://path/to/image.png");
-      });
+        bg = new Backstretch("http://path/to/image.png");
+        window.onresize = function(){if (bg !== undefined){bg.adjust();}}                                           
+      });      
     </script>
 
 ## Swapping Images
